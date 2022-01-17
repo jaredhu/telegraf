@@ -15,6 +15,7 @@ import (
 	_ "github.com/influxdata/telegraf/plugins/inputs/system"
 	_ "github.com/influxdata/telegraf/plugins/inputs/win_perf_counters"
 	_ "github.com/influxdata/telegraf/plugins/outputs/influxdb"
+	_ "github.com/influxdata/telegraf/plugins/outputs/kafka"
 )
 
 func GetTelegrafAgent(configFile, logFile string) (*agent.Agent, error) {
